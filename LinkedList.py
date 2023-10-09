@@ -6,15 +6,15 @@ class Node:
 class LinkedList:
     def __init__(self):
         self.head = None
-        self.last_node = None
+        self.lastnode = None
  
     def append(self, data):
-        if self.last_node is None:
+        if self.lastnode is None:
             self.head = Node(data)
-            self.last_node = self.head
+            self.lastnode = self.head
         else:
-            self.last_node.next = Node(data)
-            self.last_node = self.last_node.next
+            self.lastnode.next = Node(data)
+            self.lastnode = self.lastnode.next
  
     def display(self):
         current = self.head
@@ -28,4 +28,4 @@ for i in range(n):
     data = int(input('Enter data item: '))
     a_llist.append(data)
 print('The linked list: ', end = '')
-a_llist.display()
+a_llist.display() 
