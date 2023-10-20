@@ -16,10 +16,10 @@ def binary_search(arr, a, low, high):
 
 arr = [1, 2, 3, 4, 5, 6, 7]
 a = 4
-#printing the array
+
 print("The given array is", arr)
 
-#printing element to be found
+
 print("Element to be found is ", a)
 
 index = binary_search(arr, a, 0, len(arr)-1)
